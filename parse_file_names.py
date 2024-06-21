@@ -11,7 +11,7 @@ data = []
 for filename in os.listdir(directory):
     # Replace "_colon_" with ":"
     modified_filename = filename.replace("_colon_", ":")
-    modified_filename = filename.replace("_slash_", "/")
+    modified_filename = modified_filename.replace("_slash_", "/")
 
     # Parse the filename on commas
     parsed_data = modified_filename.split(",")
